@@ -1,0 +1,270 @@
+/*******************************************Fonst*******************************************/
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FjallaOne-Regular.ttf");
+}
+
+/*******************************************Variables*******************************************/
+
+:root {
+  --basic-black: #000;
+  --basic-white: #fff;
+  --text-color: rgb(39, 39, 39);
+  --background: rgb(208, 240, 237);
+}
+
+/*******************************************Global*******************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-width: 1200px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+  background-color: var(--background);
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*******************************************Header*******************************************/
+
+.main-header {
+  padding: 10px 0 20px 0;
+  background: linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.header-top {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Fjalla One";
+  font-size: 26px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.logo-teamlead {
+  width: 197px;
+  height: 40px;
+  background: url(../img/logo.svg) no-repeat;
+  display: flex;
+}
+
+.teamlead-link {
+  width: 100%;
+  height: 100%;
+}
+
+.clock {
+  width: 90px;
+  font-family: "Fjalla One";
+  font-size: 26px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me__inner {
+  display: flex;
+}
+
+.about-me span,
+.technologies span {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-me__description {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-me__list {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__item {
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.about-me__item + li {
+  margin-top: 10px;
+}
+
+.name::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/man.svg);
+}
+
+.profession::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/developer.svg);
+}
+
+.education::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/education.svg);
+}
+
+.location::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/location.svg);
+}
+
+.experience::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/star.svg);
+}
+
+.photo-img {
+  width: 201px;
+  height: 151px;
+  margin-right: 10px;
+  background-image: url(../img/photo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.technologies-list {
+  margin-top: 20px;
+  display: flex;
+}
+
+.technologies-item {
+  width: 85px;
+  height: 85px;
+}
+
+.technologies-item + li {
+  margin-left: 10px;
+}
+
+.html-img {
+  background-image: url(../img/HTML5_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.css-img {
+  background-image: url(../img/CSS3_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.js-img {
+  background-image: url(../img/javascript-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
