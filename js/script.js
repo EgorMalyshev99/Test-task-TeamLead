@@ -10,3 +10,17 @@ function clock() {
 }
 
 setInterval(clock, 1000);
+
+var slider = document.querySelectorAll("#slider .slide");
+var currentslide = 0;
+
+var slideInterval = setInterval(
+  nextSlide,
+  5000
+); /* Интервал между картинками */
+
+function nextSlide() {
+  slider[currentslide].className = "slide";
+  currentslide = (currentslide + 1) % slider.length;
+  slider[currentslide].className = "slide demonstration";
+}
