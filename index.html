@@ -59,7 +59,7 @@
         <h2 class="product-heading">Продукт "LevelUp"</h2>
         <div class="product-inner">
           <div class="product-img">
-            <img src="./img/prod.png" height="400" alt="Изображение продукта LevelUp" width="185">
+            <img src="./img/prod.png" alt="Изображение продукта LevelUp">
           </div>
           <div class="product-description">
             <ul class="product-description-list">
@@ -67,7 +67,7 @@
               <li class="product-description-item">Невысокая цена</li>
               <li class="product-description-item">Результат гарантирован</li>
             </ul>
-            <button class="order-btn">Заказать</button>
+            <button class="order-btn go-order">Заказать</button>
           </div>
         </div>
       </section>
@@ -124,12 +124,13 @@
         </div>
       </section>
       <section class="blog">
+        <h2 class="blog-heading">Блог</h2>
         <div class="blog-inner">
           <div id="slider">
             <div class="slide demonstration">
               <div class="slide-inner">
                 <div class="post-date">
-                  12 june 2020 | 13:55
+                  12 june 2019 | 13:55
                 </div>
                 <img class="user-img" src="./img/rick.jpg" alt="Рик">
                 <span class="user-name">Рик</span>
@@ -141,7 +142,7 @@
             <div class="slide">
               <div class="slide-inner">
                 <div class="post-date">
-                  12 june 2020 13:55
+                  21 september 2020 | 13:55
                 </div>
                 <img class="user-img" src="./img/morty.jpg" alt="Морти">
                 <span class="user-name">Морти</span>
@@ -154,12 +155,13 @@
             <div class="slide">
               <div class="slide-inner">
                 <div class="post-date">
-                  12 june 2020 13:55
+                  12 december 2021 | 13:55
                 </div>
                 <img class="user-img" src="./img/scvonchi.jpg" alt="Сквончи">
                 <span class="user-name">Сквончи</span>
                 <p class="user-text">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
-                  тексты. Вопрос решила диких заманивший взобравшись языкового первую, пор букв?</p>
+                  тексты. Вопрос решила диких заманивший взобравшись языкового первую, пор букв?
+                </p>
               </div>
             </div>
             <div class="controls">
@@ -174,16 +176,59 @@
           </div>
         </div>
       </section>
-
       <section class="promo">
+        <h2 class="promo-heading">Промо</h2>
         <div class="promo-inner">
-
+          <div class="promo-img">
+            <img src="./img/doctor.png" alt="Человекс банкой">
+          </div>
+          <div class="promo-description">
+            <p class="promo-description-text">
+              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Несколько ведущими
+              переулка великий образ имени это, дал рекламных путь подпоясал даль дорогу проектах. Запятых предупреждал
+              родного продолжил своего свою текст коварных. То вопроса до реторический грустный океана запятой дорогу?
+            </p>
+            <button class="order-btn go-order2">Заказать</button>
+          </div>
+          <div class="promo-characteristics">
+            <ul class="characteristics-list">
+              <li class="characteristics-item"><i>Стильно</i></li>
+              <li class="characteristics-item"><i>Модно</i></li>
+              <li class="characteristics-item"><i>Молодежно</i></li>
+            </ul>
+          </div>
         </div>
       </section>
-
-      <section class="order-form">
+      <section class="order">
         <div class="order-inner">
-
+          <h2 class="order-heading">Сделать заказ</h2>
+          <div class="timer-inner">
+            <p class="timer"></p>
+          </div>
+          <div class="order-product">
+            <div class="product-presentation">
+              <div class="product-presentation-img">
+                <img src="./img/prod.png" alt="">
+              </div>
+              <div class="product-presentation-cost">
+                <span class="old-cost">2300 Р.</span>
+                <span class="new-cost">1300 Р.</span>
+              </div>
+            </div>
+            <div class="order-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="form-inner">
+                  <input class="name-input" type="text" name="name" id="name-id" placeholder="Равшан Джамшутов" required>
+                  <label for="name-id" class="name-label">Введите имя и фамилию:</label>
+                  <input class="email-input" type="email" name="email" id="email-id" placeholder="ravshan.privet@mail.ru" required>
+                  <label for="email-id" class="email-label">Введите e-mail:</label>
+                  <input class="tel-input" type="number" name="tel" id="tel-id" placeholder="+7(999)123-45-67" required>
+                  <label for="tel-id" class="tel-label">Введите телефон:</label>
+                  <button class="order-btn form-btn" type="submit">Купить</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>

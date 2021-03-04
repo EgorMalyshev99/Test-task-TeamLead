@@ -1,3 +1,5 @@
+/************Clock************/
+
 function clock() {
   let date = new Date(),
     hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours(),
@@ -10,6 +12,8 @@ function clock() {
 }
 
 setInterval(clock, 1000);
+
+/************Slider************/
 
 const slider = document.querySelectorAll("#slider .slide");
 const dots = document.querySelectorAll("#dots .dot");
@@ -48,6 +52,8 @@ function prevSlide() {
   dots[currentDot].className = "dot active-dot";
 }
 
+function chooseSlide() {}
+
 nextBtn.addEventListener("click", (evt) => {
   console.log("next");
   nextSlide();
@@ -56,4 +62,43 @@ nextBtn.addEventListener("click", (evt) => {
 prevBtn.addEventListener("click", (evt) => {
   console.log("prev");
   prevSlide();
+});
+
+/************Timer************/
+
+let timer;
+let min = 30;
+let sec = 0;
+
+function countdown() {
+  if (min === 0 && sec === 0) {
+    clearTimeout(timer);
+    alert("Время вышло!");
+    return;
+  } else {
+    if (sec === 0) {
+      min--;
+      sec = 59;
+    } else {
+      sec--;
+    }
+  }
+  timer = setTimeout(countdown, 1000);
+  document.querySelector(".timer").innerHTML = min + ":" + sec;
+}
+
+countdown();
+
+/************Scroll************/
+
+const goOrder = document.querySelector(".go-order");
+const goOrder2 = document.querySelector(".go-order2");
+const el = document.querySelector(".order");
+
+goOrder.addEventListener("click", (evt) => {
+  el.scrollIntoView({ behavior: "smooth" });
+});
+
+goOrder2.addEventListener("click", (evt) => {
+  el.scrollIntoView({ behavior: "smooth" });
 });
