@@ -660,10 +660,7 @@ button {
 
 .composition-item-img {
   overflow: hidden;
-  width: 80%;
   margin-bottom: 20px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
   border: 7px inset #126b2e;
   border-radius: 50%;
   display: -webkit-box;
@@ -817,12 +814,12 @@ button {
 }
 
 .next-btn {
-  background: url(../img/next.svg);
+  background: url(../img/next.svg) no-repeat;
   right: 20px;
 }
 
 .prev-btn {
-  background: url(../img/prev.svg);
+  background: url(../img/prev.svg) no-repeat;
   left: 20px;
 }
 
@@ -906,7 +903,7 @@ button {
 }
 
 .promo-img img {
-  max-width: 300px;
+  width: 300px;
 }
 
 .promo-description {
