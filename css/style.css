@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*******************************************Fonst*******************************************/
 
 @font-face {
@@ -569,6 +576,19 @@ button {
             0.5
           )
           50%, rgba(0, 0, 0, 0) 50%);
+  background-image: -o-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    ),
+    -o-radial-gradient(50% 0%, 190% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(
+            255,
+            255,
+            255,
+            0.5
+          )
+          50%, rgba(0, 0, 0, 0) 50%);
   background-image: linear-gradient(
       45deg,
       rgba(255, 255, 255, 0) 30%,
@@ -860,6 +880,15 @@ button {
   position: absolute;
   left: 46%;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .dot {
@@ -868,6 +897,10 @@ button {
   background: none;
   border: 4px solid rgb(55, 6, 83);
   border-radius: 50%;
+}
+
+.dot + .dot {
+  margin-left: 4px;
 }
 
 .active-dot {
@@ -933,6 +966,9 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .promo-img img {
@@ -1468,7 +1504,7 @@ input:focus:-ms-input-placeholder {
   }
 
   #dots {
-    left: 41%;
+    left: 38%;
   }
 
   .promo-inner {
