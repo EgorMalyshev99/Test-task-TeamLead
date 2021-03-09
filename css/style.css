@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*******************************************Fonst*******************************************/
 
 @font-face {
@@ -121,6 +128,7 @@ button {
 
 .main-header {
   padding: 10px 0 20px 0;
+  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: -webkit-gradient(
     linear,
     left top,
@@ -129,7 +137,6 @@ button {
     color-stop(#b3dbd3),
     to(#f4d6db)
   );
-  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
@@ -223,6 +230,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -397,6 +406,21 @@ button {
   margin-bottom: 50px;
   font-size: 35px;
   line-height: 40px;
+  background: -o-linear-gradient(
+    top,
+    rgb(0, 0, 0),
+    rgb(22, 22, 22),
+    rgb(45, 45, 45),
+    rgb(67, 67, 67),
+    rgb(90, 90, 90),
+    rgb(112, 112, 112),
+    rgb(93, 93, 93),
+    rgb(75, 75, 75),
+    rgb(56, 56, 56),
+    rgb(37, 37, 37),
+    rgb(19, 19, 19),
+    rgb(0, 0, 0)
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -413,21 +437,6 @@ button {
     color-stop(rgb(37, 37, 37)),
     color-stop(rgb(19, 19, 19)),
     to(rgb(0, 0, 0))
-  );
-  background: -o-linear-gradient(
-    top,
-    rgb(0, 0, 0),
-    rgb(22, 22, 22),
-    rgb(45, 45, 45),
-    rgb(67, 67, 67),
-    rgb(90, 90, 90),
-    rgb(112, 112, 112),
-    rgb(93, 93, 93),
-    rgb(75, 75, 75),
-    rgb(56, 56, 56),
-    rgb(37, 37, 37),
-    rgb(19, 19, 19),
-    rgb(0, 0, 0)
   );
   background: linear-gradient(
     to bottom,
@@ -547,6 +556,19 @@ button {
             0.5
           )
           50%, rgba(0, 0, 0, 0) 50%);
+  background-image: -o-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    ),
+    -o-radial-gradient(50% 0%, 190% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(
+            255,
+            255,
+            255,
+            0.5
+          )
+          50%, rgba(0, 0, 0, 0) 50%);
   background-image: linear-gradient(
       45deg,
       rgba(255, 255, 255, 0) 30%,
@@ -629,6 +651,7 @@ button {
 
 .composition-item {
   padding: 20px;
+  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: -webkit-gradient(
     linear,
     left top,
@@ -637,7 +660,6 @@ button {
     color-stop(#b3dbd3),
     to(#f4d6db)
   );
-  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   -webkit-box-shadow: 0px 0px 10px 5px rgba(12, 21, 64, 0.75);
   box-shadow: 0px 0px 10px 5px rgba(12, 21, 64, 0.75);
@@ -666,6 +688,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .composition-center {
@@ -744,7 +772,11 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -795,6 +827,7 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -995,8 +1028,14 @@ button {
   font-size: 20px;
   line-height: 21px;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -1241,6 +1280,7 @@ input:focus:-ms-input-placeholder {
 
 .main-footer {
   padding: 50px 0;
+  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: -webkit-gradient(
     linear,
     left top,
@@ -1249,7 +1289,6 @@ input:focus:-ms-input-placeholder {
     color-stop(#b3dbd3),
     to(#f4d6db)
   );
-  background: -o-linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   background: linear-gradient(#69b7eb, #b3dbd3, #f4d6db);
   -webkit-box-shadow: 0px -14px 28px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px -14px 14px 0px rgba(0, 0, 0, 0.25);
@@ -1324,10 +1363,15 @@ input:focus:-ms-input-placeholder {
   }
 
   .header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1340,7 +1384,12 @@ input:focus:-ms-input-placeholder {
   }
 
   .product-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1365,7 +1414,12 @@ input:focus:-ms-input-placeholder {
   }
 
   .composition-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1419,7 +1473,12 @@ input:focus:-ms-input-placeholder {
 
   .promo-inner {
     grid-gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1428,6 +1487,8 @@ input:focus:-ms-input-placeholder {
   }
 
   .promo-description {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 
@@ -1453,7 +1514,12 @@ input:focus:-ms-input-placeholder {
   }
 
   .order-product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1464,8 +1530,13 @@ input:focus:-ms-input-placeholder {
   .product-presentation {
     width: 80%;
     margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
@@ -1482,6 +1553,8 @@ input:focus:-ms-input-placeholder {
   }
 
   .form-inner {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
